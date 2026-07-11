@@ -1,16 +1,67 @@
-# React + Vite
+# Travel Recommendation System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive frontend web application that helps users explore travel destinations based on their interests and preferences. The application provides an attractive and user-friendly interface for discovering travel options.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive and modern user interface
+- Browse travel destinations
+- Interest-based travel recommendations
+- Interactive navigation
+- Clean and intuitive design
+- Fast performance using React and Vite
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+travel-recommendation-system/
+├── public/
+├── src/
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run the Project
+
+```bash
+npm run dev
+```
+
+## Future Enhancements
+
+- User authentication
+- AI-powered travel recommendations
+- Destination filtering
+- Location-based suggestions
+- Favorites and wishlist
+- Backend integration
+- Booking integration
+
+## Author
+
+**KAVURI MANIKANTA**
+
+GitHub: https://github.com/KAVURI-MANIKANTA
