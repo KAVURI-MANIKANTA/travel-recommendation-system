@@ -1,0 +1,173 @@
+/* PAGE */
+.wish-page {
+  min-height: 100vh;
+  padding: 110px 40px 60px;
+  background: linear-gradient(to bottom, #f5f7fa, #eef3f8);
+}
+
+/* HEADER */
+.wish-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.wish-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.wish-header p {
+  color: #666;
+  font-size: 17px;
+}
+
+/* EMPTY STATE */
+.empty {
+  max-width: 600px;
+  margin: 100px auto;
+
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+
+  border-radius: 30px;
+  padding: 60px 40px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.empty h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.empty p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* GRID */
+.wish-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+}
+
+/* CARD */
+.wish-card {
+  position: relative;
+  height: 380px;
+
+  border-radius: 28px;
+  overflow: hidden;
+
+  cursor: pointer;
+
+  transition: all 0.35s ease;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.wish-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+/* HOVER */
+.wish-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.18);
+}
+
+/* IMAGE ZOOM */
+.wish-card:hover img {
+  transform: scale(1.08);
+}
+
+/* OVERLAY */
+.wish-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 25px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.92),
+    rgba(0,0,0,0.45),
+    transparent
+  );
+
+  color: white;
+}
+
+/* TEXT */
+.wish-overlay h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.wish-overlay p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+
+  color: rgba(255,255,255,0.9);
+}
+
+/* BUTTON */
+.wish-overlay button {
+  border: none;
+  outline: none;
+
+  padding: 10px 18px;
+
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.18);
+
+  color: white;
+  font-size: 14px;
+
+  cursor: pointer;
+
+  backdrop-filter: blur(8px);
+
+  transition: all 0.3s ease;
+}
+
+/* BUTTON HOVER */
+.wish-overlay button:hover {
+  background: #ff4d4d;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .wish-page {
+    padding: 100px 20px 50px;
+  }
+
+  .wish-header h1 {
+    font-size: 34px;
+  }
+
+  .wish-grid {
+    gap: 25px;
+  }
+
+  .wish-card {
+    height: 340px;
+  }
+}
